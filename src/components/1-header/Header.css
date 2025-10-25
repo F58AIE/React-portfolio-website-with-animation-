@@ -1,0 +1,12 @@
+header ul.flex{
+gap: 16px;
+}
+
+header ul li a {
+    color: var(--title)
+}
+
+header button {
+    height: 100px;
+    
+}
