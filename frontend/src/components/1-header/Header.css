@@ -1,0 +1,21 @@
+header.flex{
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2.4rem;    
+}
+
+header.flex nav{
+    background-color: var(--bgHeader);
+}
+header ul.flex{
+gap: 16px;
+}
+
+header ul li a {
+    color: var(--title)
+}
+
+header button {
+    font-size :1.rem
+    
+}
