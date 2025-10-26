@@ -27,7 +27,6 @@ header ul li a:hover {
   color: var(--green);
   opacity: 1;
   font-size: 0.9rem;
-  font-weight: 500;
 }
 
 header button {
@@ -35,18 +34,35 @@ header button {
 }
 
 header button.menu {
-    background-color: var(--bgHeader);
-   height: 2.4rem;
-    width: 2.4rem;
+  background-color: var(--bgHeader);
+  height: 2.4rem;
+  width: 2.4rem;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+  
 }
- /* Icon Button */
-  header button.mode{
-    background-color: var(--bgHeader);
-    height: 2.4rem;
-    width: 2.4rem;
- }
+/* Icon Button */
+header .menu, header button.mode {
+  background-color: var(--bgHeader);
+  height: 2.4rem;
+  width: 2.4rem;
+  border-radius: 50%;
+  justify-content: center;
+  text-align: center;  
+  border: 1px solid cadetblue;
+}
 
+header .xbutton {
+  background-color: var(--bgHeader);
+    border-radius: 50%;
+    text-align: center;
+    border: 1px solid cadetblue;
+    width: 2rem;
+    height: 2rem;
+    justify-content: center;
 
+}
 
 /* Modal == pop up (Responsive) */
 header .fixed {
@@ -56,15 +72,17 @@ header .fixed {
   z-index: 6;
 }
 
-
 @keyframes mymove {
-    0% {scale: 0;}
-    60% {scale: 1.2;}
-    100% {scale: 1;}
+  0% {
+    scale: 0;
+  }
+  60% {
+    scale: 1.2;
+  }
+  100% {
+    scale: 1;
+  }
 }
-
-
-
 
 header .fixed ul.modal {
   animation: mymove 0.7s 1;
@@ -91,24 +109,12 @@ header .fixed ul.modal li a {
   font-size: 1rem;
 }
 
-
-
 header .fixed ul.modal li:first-child {
   text-align: right;
   border: none;
   padding-top: 0;
   padding-bottom: 0.2rem;
 }
-
-
-
-
-
-
-
-
-
-
 
 @media (max-width: 700px) {
   header.flex nav {
