@@ -44,10 +44,14 @@ li{
   list-style: none;
 }
 a{
-  text-decoration: none;
-  color:initial;
+all:unset;
   transition: 0.2s;
 }
+
+a:hover{
+  cursor: pointer;
+}
+
 .flex{
   display: flex;
   align-items: center;
@@ -58,7 +62,9 @@ a{
   border :solid red
 }
 
-
+button{
+  all:unset;
+}
 
 
 

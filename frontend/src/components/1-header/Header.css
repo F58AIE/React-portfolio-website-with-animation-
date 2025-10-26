@@ -35,8 +35,18 @@ header button {
 }
 
 header button.menu {
-  
+    background-color: var(--bgHeader);
+   height: 2.4rem;
+    width: 2.4rem;
 }
+ /* Icon Button */
+  header button.mode{
+    background-color: var(--bgHeader);
+    height: 2.4rem;
+    width: 2.4rem;
+ }
+
+
 
 /* Modal == pop up (Responsive) */
 header .fixed {
