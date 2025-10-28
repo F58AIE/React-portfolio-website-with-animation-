@@ -1,15 +1,20 @@
 import { useState } from "react";
 import "./header.css";
-import '@fortawesome/fontawesome-free/css/all.min.css';
+import "@fortawesome/fontawesome-free/css/all.min.css";
 
 const Header = () => {
   const [showModal, setShowModal] = useState(false);
   return (
     <header className="flex">
-      <button onClick={() => {setShowModal(true);}} className="menu flex">
-     <span className="fa-solid fa-bars"></span>
-     </button>
-      <div/>
+      <button
+        onClick={() => {
+          setShowModal(true);
+        }}
+        className="menu flex"
+      >
+        <span className="fa-solid fa-bars"></span>
+      </button>
+      <div />
 
       <nav>
         <ul className="flex">
@@ -20,10 +25,10 @@ const Header = () => {
             <a href="">Articles</a>
           </li>
           <li>
-            <a href="">Projects</a>
+            <a href="">Courses</a>
           </li>
           <li>
-            <a href="">Speaking</a>
+          <a href="">Projects</a>
           </li>
           <li>
             <a href="">Contact</a>
@@ -32,17 +37,22 @@ const Header = () => {
       </nav>
 
       <button className="mode flex">
-    <span class="fa-regular fa-moon"></span>
-    <i class="fa-solid fa-sun"></i>
+        <span class="fa-regular fa-moon"></span>
+        <i class="fa-solid fa-sun"></i>
       </button>
 
       {showModal && (
         <div className="fixed">
           <ul className="modal">
             <li>
-              <button className="xbutton" onClick={() => {setShowModal(false);}}>
+              <button
+                className="xbutton"
+                onClick={() => {
+                  setShowModal(false);
+                }}
+              >
                 <span class="fa-solid fa-xmark"></span>
-                </button>
+              </button>
             </li>
             <li>
               <a href="">About</a>
@@ -51,10 +61,10 @@ const Header = () => {
               <a href="">Articles</a>
             </li>
             <li>
-              <a href="">Projects</a>
+              <a href="">Courses</a>
             </li>
             <li>
-              <a href="">Speaking</a>
+              <a href="">Projects</a>
             </li>
             <li>
               <a href="">Contact</a>
